@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>{{title|upper}}</title>
+</head>
+<body>
+    <h2> my scheme name is {{sname}}</h2>
+    <img src="{% static 'images\anne.png' %}" alt="i'm beautiful"/>
+    <img src="{% get_static_prefix %}images/dualipa.png" alt="i'm beautiful"/>
+    <hr>
+    <form action="">
+        <input type="button" value="click here" onclick="disp()"/>
+    </form>
+    <script src="{% static 'js/all.js' %}"></script>
+</body>
+</html>
+
